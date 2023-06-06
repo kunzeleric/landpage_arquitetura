@@ -1,0 +1,156 @@
+:root {
+    --black: #303030;
+    --gray: #0000004D;
+    --offwhite: #F9F9F9;
+    --white-alt: #F5F5F5;
+    --white: #FFFFFF;
+    --orange: #C07212;
+    --dark-orange: #78470b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+    background-color: var(--black);
+    color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 1.25rem;
+    padding: 12.5rem 3.875rem;
+}
+
+
+    header > h1{
+        font-size: 3.75rem;
+    }
+
+    header > p {
+        font-size: 1.25rem;
+    }
+
+#dados {
+    display: flex;
+    align-items: center;
+    padding: 7.18rem 0;
+    justify-content: space-around;
+    background-color: var(--offwhite);
+}
+
+.dadosInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+    .dadosInfo > span {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    .dadosInfo > p {
+        font-size: 1.25rem;
+    }
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5.125rem 0;
+}
+
+article > img {
+    max-height: 37.8rem;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5rem;
+    padding-right: 4.2rem;
+}
+
+    .description > h2 {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    .description > p {
+        font-size: 1.5rem;
+        line-height: 1.4;
+        max-width: 46rem;
+        color: var(--black)
+    }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 5.45rem 0;
+    background-color: var(--black);
+    
+}
+
+footer > h3 {
+    color: var(--white);
+    font-size: 2rem;
+}
+
+footer > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.formInputs{
+    display: flex;
+    flex-direction: column;
+    gap: 3.875rem;
+    padding-bottom: 5.5rem;
+}
+
+    .formInputs > input {
+        height: 4rem;
+        width: 31.75rem;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-indent: 1.875rem;
+    }
+
+    .formInputs > input::placeholder{
+        color: var(--gray);
+    }
+
+    .formBtn {
+        background-color: var(--orange);
+        border: 0;
+        border-radius: 10px;
+        font-size: 1.875rem;
+        font-weight: bold;
+        padding: 1.375rem 3rem;
+        cursor: pointer;
+        color: var(--white);
+    
+        transition: background-color 0.1s;
+    }
+    
+    .formBtn:hover{
+        background-color: var(--dark-orange);
+    }
+
+

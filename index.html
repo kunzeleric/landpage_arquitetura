@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Raleway&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
+    <title>Landpage - Arquitetura</title>
+</head>
+
+<body>
+    <header data-anijs="if: load, on: window, do: zoomIn animated">
+        <h1>Tradição em projetos de arquitetura</h1>
+        <p>Arquitetura residencial e comercial.</p>
+    </header>
+    <section id="dados" data-anijs="if: load, on: window, do: swing animated">
+        <div class="dadosInfo">
+            <span>850</span>
+            <p>empreendimentos construídos</p>
+        </div>
+        <div class="dadosInfo">
+            <span>40</span>
+            <p>anos de mercado e experiência</p>
+        </div>
+        <div class="dadosInfo">
+            <span>2,000,000</span>
+            <p>m² em projetos construídos</p>
+        </div>
+    </section>
+    <main>
+        <article>
+            <div class="description" data-anijs="if: load, on: window, do: wobble animated">
+                <h2>Arquitetos com História e Experiência.</h2>
+                <p>
+                    Nós realizamos desde 2002 projetos e gerenciamento de obras.
+                    Com mais de 800 projetos e 2.000.000 de m² construídos, tendo
+                    como principal proposta transformar em realidade os sonhos de seus clientes,
+                    criando projetos personalizados, unindo a tradição e a modernidade em nossos projetos.
+                </p>
+            </div>
+            <img
+                src="./assets/example.svg" 
+                alt="Projeto Exemplo"
+                data-anijs="if: load, on: window, do: rollIn animated"
+                />
+        </article>
+    </main>
+    <footer data-anijs="if: load, on: window, do: flipInY animated">
+        <h3>Conheça mais sobre nossos serviços:</h3>
+        <form action="https://api.sheetmonkey.io/form/3oXuYAWd95of7mFRppVmb8" method="post">
+            <div class="formInputs">
+                <input type="text" placeholder="Nome" required name="Name"/>
+                <input type="email" placeholder="Email" required name="Email"/>
+            </div>
+            <button class="formBtn" type="submit">Fale conosco</button>
+        </form>
+    </footer>
+    <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script>
+</body>
+</html>
